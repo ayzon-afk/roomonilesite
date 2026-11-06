@@ -1,0 +1,10 @@
+.topbar { background: var(--accent); color: #fff; font-size: 13px; font-weight: 500; }
+.topbar__in { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 36px; }
+.topbar__left, .topbar__right { display: flex; align-items: center; gap: 18px; }
+.topbar a:hover { text-decoration: underline; }
+
+@media (max-width: 720px) {
+  .topbar__left span:nth-child(2) { display: none; }
+  .topbar__right { display: none; }
+  .topbar__in { justify-content: center; }
+}

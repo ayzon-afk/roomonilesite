@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RooMobile — telefonlar va aksessuarlar</title>
+  <meta name="description" content="RooMobile: telefonlar, chexollar, power bank, kolonkalar, sovg'alar va zargarlik buyumlari. Toshkentdagi filiallar. Onlayn buyurtma.">
+  <meta name="theme-color" content="#e4202e">
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="RooMobile — telefonlar va aksessuarlar">
+  <meta property="og:description" content="Telefonlar, aksessuarlar, sovg'alar va zargarlik buyumlari. Saytdan buyurtma bering.">
+  <meta property="og:image" content="images/store.jpg">
+
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/topbar.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/tiles.css">
+  <link rel="stylesheet" href="css/promo.css">
+  <link rel="stylesheet" href="css/catalog.css">
+  <link rel="stylesheet" href="css/cards.css">
+  <link rel="stylesheet" href="css/features.css">
+  <link rel="stylesheet" href="css/info.css">
+  <link rel="stylesheet" href="css/cart.css">
+  <link rel="stylesheet" href="css/checkout.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/toast.css">
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="container topbar__in">
+      <div class="topbar__left">
+        <span data-i18n="topbar_branches">4 ta filial Toshkentda</span>
+        <span data-i18n="hero_chip">Har kuni 09:00 – 23:00</span>
+      </div>
+      <div class="topbar__right">
+        <a href="#" data-phone-link>📞 <span data-phone-text></span></a>
+        <a href="https://instagram.com/room_mobilee" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container header__in">
+      <a class="logo" href="#top" aria-label="RooMobile">
+        <img class="logo__img" src="images/logo.png" alt="" width="44" height="44">
+        <span class="logo__text">Roo<b>Mobile</b></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Menu">
+        <a href="#categories" data-i18n="tiles_title">Toifalar</a>
+        <a href="#catalog" data-i18n="nav_catalog">Katalog</a>
+        <a href="#about" data-i18n="nav_about">Biz haqimizda</a>
+        <a href="#branches" data-i18n="nav_branches">Filiallar</a>
+        <a href="#contacts" data-i18n="nav_contacts">Aloqa</a>
+      </nav>
+
+      <div class="header__actions">
+        <a class="btn btn--primary btn--sm header__call" href="#" data-phone-link>📞 <span data-phone-text></span></a>
+        <div class="lang" role="group" aria-label="Language">
+          <button class="lang__btn" type="button" data-lang="uz">UZ</button>
+          <button class="lang__btn" type="button" data-lang="ru">RU</button>
+        </div>
+        <button class="cart-btn" id="cart-open" type="button" data-i18n-aria="cart_open" aria-label="Savat">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 8h14l-1 12H6z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/>
+          </svg>
+          <span class="cart-btn__badge" id="cart-count" hidden>0</span>
+        </button>
+        <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="nav" data-i18n-aria="menu_open" aria-label="Menyu">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="hero__chip" data-i18n="hero_badge">Yangi filial: Samarqand Darvoza</p>
+          <h1 class="hero__title">
+            <span data-i18n="hero_title_a">Telefonlar, aksessuarlar va</span>
+            <em data-i18n="hero_title_b">sovg'alar — bir joyda</em>
+          </h1>
+          <p class="hero__text" data-i18n="hero_text">Chexollar, power bank, kolonkalar, naushniklar va zargarlik buyumlari.</p>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#catalog" data-i18n="hero_cta">Katalogni ochish</a>
+            <a class="btn btn--ghost" href="#branches" data-i18n="hero_cta2">Filiallar</a>
+          </div>
+          <div class="hero__stats">
+            <div class="stat"><strong>4</strong><span data-i18n="stat_branches">filial</span></div>
+            <div class="stat"><strong>09–23</strong><span data-i18n="stat_daily">har kuni ochiq</span></div>
+            <div class="stat"><strong>9</strong><span data-i18n="stat_cats">toifa</span></div>
+          </div>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+          <div class="hero__blob"></div>
+          <div class="phone">
+            <div class="phone__screen">
+              <img class="phone__logo" src="images/logo.png" alt="">
+              <div class="phone__name">Roo<b>Mobile</b></div>
+              <div class="phone__apps"><span>📱</span><span>🔋</span><span>🎧</span><span>🔊</span><span>⌚</span><span>🎁</span></div>
+              <div class="phone__btn" data-i18n="phone_btn">Buyurtma berish</div>
+            </div>
+          </div>
+          <div class="fchip fchip--1"><span>🎧</span><span data-i18n="fc_headphones">Naushniklar</span></div>
+          <div class="fchip fchip--2"><span>🔋</span><span data-i18n="fc_powerbank">Power bank</span></div>
+          <div class="fchip fchip--3"><span>💍</span><span data-i18n="fc_jewelry">Zargarlik</span></div>
+          <div class="fchip fchip--4"><span>🎁</span><span data-i18n="fc_gifts">Sovg'alar</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="categories">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2 class="section-title" data-i18n="tiles_title">Toifalar</h2>
+            <p class="section-sub" data-i18n="tiles_sub">Kerakli bo'limni tanlang</p>
+          </div>
+        </div>
+        <div class="tiles" id="tiles"></div>
+      </div>
+    </section>
+
+    <section class="section section--soft" id="hits">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2 class="section-title" data-i18n="hits_title">Xit mahsulotlar</h2>
+            <p class="section-sub" data-i18n="hits_sub">Eng ko'p so'raladigan tovarlar</p>
+          </div>
+          <a class="btn btn--ghost btn--sm" href="#catalog" data-i18n="hits_all">Hammasini ko'rish</a>
+        </div>
+        <div class="strip" id="hits-strip"></div>
+      </div>
+    </section>
+
+    <section class="promo">
+      <div class="container promo__in">
+        <div>
+          <span class="promo__tag" data-i18n="promo_tag">YANGI</span>
+          <h2 class="promo__title" data-i18n="promo_title">Samarqand Darvoza filiali ochildi!</h2>
+          <p class="promo__text" data-i18n="promo_text">Bizni yangi manzilda kutib qolamiz. Har kuni 09:00 dan 23:00 gacha.</p>
+        </div>
+        <a class="btn btn--light" id="promo-map" href="#" target="_blank" rel="noopener" data-i18n="promo_cta">Xaritada ko'rish</a>
+      </div>
+    </section>
+
+    <section class="catalog" id="catalog">
+      <div class="container">
+        <h2 class="section-title" data-i18n="nav_catalog">Katalog</h2>
+
+        <div class="chips" id="chips" role="group" aria-label="Categories"></div>
+
+        <div class="toolbar">
+          <div class="field-inline field-inline--grow">
+            <label class="visually-hidden" for="search" data-i18n="search_label">Qidirish</label>
+            <input id="search" type="search" autocomplete="off" data-i18n-ph="search_ph" placeholder="Mahsulot qidirish...">
+          </div>
+          <div class="field-inline">
+            <label for="sort" data-i18n="sort_label">Saralash</label>
+            <select id="sort">
+              <option value="default" data-i18n="sort_default">Odatiy</option>
+              <option value="asc" data-i18n="sort_asc">Arzonroq</option>
+              <option value="desc" data-i18n="sort_desc">Qimmatroq</option>
+              <option value="name" data-i18n="sort_name">Nomi bo'yicha</option>
+            </select>
+          </div>
+        </div>
+
+        <p class="results" id="results-count" aria-live="polite"></p>
+
+        <div class="grid" id="grid"></div>
+
+        <div class="empty" id="empty" hidden>
+          <h3 data-i18n="empty_title">Hech narsa topilmadi</h3>
+          <p data-i18n="empty_text">Qidiruvni o'zgartiring yoki boshqa toifani tanlang</p>
+          <button class="btn btn--ghost" id="empty-reset" type="button" data-i18n="empty_reset">Filtrni tozalash</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="why">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title" data-i18n="feat_title">Nega RooMobile?</h2>
+        </div>
+        <div class="features">
+          <div class="feature"><div class="feature__icon">🛍️</div><div><h3 data-i18n="feat1_t">Keng assortiment</h3><p data-i18n="feat1_d">Telefonlardan zargarlik buyumlarigacha</p></div></div>
+          <div class="feature"><div class="feature__icon">💬</div><div><h3 data-i18n="feat2_t">Onlayn buyurtma</h3><p data-i18n="feat2_d">Savatga soling va Telegram orqali yuboring</p></div></div>
+          <div class="feature"><div class="feature__icon">📍</div><div><h3 data-i18n="feat3_t">4 ta filial</h3><p data-i18n="feat3_d">Toshkentning qulay joylarida</p></div></div>
+          <div class="feature"><div class="feature__icon">⏰</div><div><h3 data-i18n="feat4_t">Har kuni ochiq</h3><p data-i18n="feat4_d">09:00 dan 23:00 gacha</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft" id="about">
+      <div class="container about">
+        <div class="about__photo">
+          <img src="images/store.jpg" alt="RooMobile" loading="lazy">
+        </div>
+        <div>
+          <h2 class="section-title" data-i18n="about_title">Magazinimiz haqida</h2>
+          <p class="about__text" data-i18n="about_text">RooMobile — telefonlar, aksessuarlar va gadjetlar do'koni.</p>
+          <ul class="checks">
+            <li data-i18n="about_li1">Telefonlar va aksessuarlar</li>
+            <li data-i18n="about_li2">Sovg'alar va zargarlik buyumlari</li>
+            <li data-i18n="about_li3">4 ta filial, har kuni 09:00–23:00</li>
+          </ul>
+          <a class="btn btn--primary" href="#branches" data-i18n="about_cta">Filiallarni ko'rish</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="branches">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2 class="section-title" data-i18n="branches_title">Filiallarimiz</h2>
+            <p class="section-sub" data-i18n="branches_text">Har kuni 09:00 dan 23:00 gacha</p>
+          </div>
+        </div>
+        <div class="branches__grid" id="branches-grid"></div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <div class="insta">
+          <div>
+            <h2 data-i18n="insta_title">Instagram'da biz bilan qoling</h2>
+            <p data-i18n="insta_text">Yangi tovarlar va aksiyalar — @room_mobilee</p>
+          </div>
+          <a class="btn btn--primary" href="https://instagram.com/room_mobilee" target="_blank" rel="noopener" data-i18n="insta_cta">Obuna bo'lish</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" id="contacts">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a class="logo" href="#top" aria-label="RooMobile">
+            <img class="logo__img" src="images/logo.png" alt="" width="44" height="44">
+            <span class="logo__text">Roo<b>Mobile</b></span>
+          </a>
+          <p data-i18n="footer_about">Telefonlar, aksessuarlar va gadjetlar do'koni.</p>
+        </div>
+
+        <div>
+          <h4 data-i18n="footer_links">Bo'limlar</h4>
+          <ul>
+            <li><a href="#categories" data-i18n="tiles_title">Toifalar</a></li>
+            <li><a href="#catalog" data-i18n="nav_catalog">Katalog</a></li>
+            <li><a href="#about" data-i18n="nav_about">Biz haqimizda</a></li>
+            <li><a href="#branches" data-i18n="nav_branches">Filiallar</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__contacts">
+          <h4 data-i18n="footer_contacts">Aloqa</h4>
+          <ul id="contacts-links"></ul>
+        </div>
+
+        <div>
+          <h4 data-i18n="footer_branches">Filiallar</h4>
+          <ul id="footer-branches"></ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>© <span id="year"></span> RooMobile</span>
+        <span data-i18n="footer_hours">Har kuni 09:00 – 23:00</span>
+      </div>
+    </div>
+  </footer>
+
+  <a class="fab" href="#" data-phone-link data-i18n-aria="call_now" aria-label="Qo'ng'iroq">📞</a>
+
+  <div class="overlay" id="overlay"></div>
+
+  <aside class="drawer" id="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-title" aria-hidden="true">
+    <header class="drawer__head">
+      <h2 id="drawer-title" data-i18n="cart_title">Savat</h2>
+      <button class="icon-btn" id="cart-close" type="button" data-i18n-aria="cart_close" aria-label="Yopish">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </header>
+
+    <div class="drawer__body">
+
+      <section data-view="cart">
+        <ul class="lines" id="cart-list"></ul>
+        <div class="cart-empty" id="cart-empty" hidden>
+          <p data-i18n="cart_empty">Savat bo'sh</p>
+          <button class="btn btn--ghost" id="cart-empty-cta" type="button" data-i18n="cart_empty_cta">Xarid qilishni boshlash</button>
+        </div>
+      </section>
+
+      <section data-view="checkout" hidden>
+        <form class="form" id="checkout-form" novalidate>
+          <div class="field">
+            <label for="f-name" data-i18n="f_name">Ismingiz</label>
+            <input id="f-name" name="name" type="text" autocomplete="name" maxlength="60">
+            <p class="field__error" data-error-for="name" hidden></p>
+          </div>
+
+          <div class="field">
+            <label for="f-phone" data-i18n="f_phone">Telefon raqam</label>
+            <input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" maxlength="20" data-i18n-ph="ph_phone" placeholder="90 123 45 67">
+            <p class="field__error" data-error-for="phone" hidden></p>
+          </div>
+
+          <fieldset class="field field--radios">
+            <legend data-i18n="f_method">Qabul qilish usuli</legend>
+            <label class="radio"><input type="radio" name="method" value="pickup" checked><span data-i18n="m_pickup">Filialdan olib ketish</span></label>
+            <label class="radio"><input type="radio" name="method" value="delivery"><span data-i18n="m_delivery">Yetkazib berish</span></label>
+          </fieldset>
+
+          <div class="field" id="group-branch">
+            <label for="f-branch" data-i18n="f_branch">Filial</label>
+            <select id="f-branch" name="branch"></select>
+          </div>
+
+          <div class="field" id="group-address" hidden>
+            <label for="f-address" data-i18n="f_address">Manzil</label>
+            <textarea id="f-address" name="address" rows="2" maxlength="200"></textarea>
+            <p class="field__error" data-error-for="address" hidden></p>
+          </div>
+
+          <div class="field">
+            <label for="f-comment" data-i18n="f_comment">Izoh (ixtiyoriy)</label>
+            <textarea id="f-comment" name="comment" rows="2" maxlength="300"></textarea>
+          </div>
+
+          <p class="form__hint" id="form-hint"></p>
+        </form>
+      </section>
+
+      <section data-view="done" hidden>
+        <div class="done">
+          <h3 data-i18n="done_title">Buyurtma tayyor!</h3>
+          <p id="done-text"></p>
+          <textarea class="done__preview" id="order-preview" rows="9" readonly aria-label="Order text"></textarea>
+          <div class="done__actions">
+            <button class="btn btn--ghost" id="copy-order" type="button" data-i18n="done_copy">Matnni nusxalash</button>
+            <a class="btn btn--primary" id="open-chat" href="#" target="_blank" rel="noopener"></a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <footer class="drawer__foot">
+      <div class="total" id="total-row">
+        <span data-i18n="cart_total">Jami</span>
+        <strong id="cart-total">0</strong>
+      </div>
+
+      <div data-foot="cart">
+        <button class="btn btn--primary btn--block" id="go-checkout" type="button" data-i18n="cart_checkout">Buyurtma berish</button>
+        <button class="link-btn" id="cart-clear" type="button" data-i18n="cart_clear">Savatni tozalash</button>
+      </div>
+
+      <div data-foot="checkout" hidden>
+        <button class="btn btn--primary btn--block" type="submit" form="checkout-form" data-i18n="checkout_send">Buyurtmani yuborish</button>
+        <button class="link-btn" id="back-to-cart" type="button" data-i18n="checkout_back">Savatga qaytish</button>
+      </div>
+
+      <div data-foot="done" hidden>
+        <button class="btn btn--primary btn--block" id="finish-order" type="button" data-i18n="done_finish">Savatni tozalash va yopish</button>
+      </div>
+    </footer>
+  </aside>
+
+  <div class="toast-region" id="toast-region" aria-live="polite"></div>
+
+  <script src="js/utils.js"></script>
+  <script src="js/config.js"></script>
+  <script src="data/categories.js"></script>
+  <script src="data/products.js"></script>
+  <script src="js/i18n/uz.js"></script>
+  <script src="js/i18n/ru.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/state.js"></script>
+  <script src="js/toast.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/render-categories.js"></script>
+  <script src="js/render-products.js"></script>
+  <script src="js/render-home.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/cart-ui.js"></script>
+  <script src="js/checkout-form.js"></script>
+  <script src="js/order.js"></script>
+  <script src="js/render-info.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

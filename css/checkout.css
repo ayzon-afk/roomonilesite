@@ -1,0 +1,41 @@
+.form { display: flex; flex-direction: column; gap: 16px; }
+
+.field { display: flex; flex-direction: column; gap: 6px; border: 0; padding: 0; min-width: 0; }
+.field label, .field legend { font-size: 14px; color: var(--muted); font-weight: 500; padding: 0; }
+
+.field input[type="text"],
+.field input[type="tel"],
+.field select,
+.field textarea {
+  width: 100%; min-height: 46px; padding: 10px 14px; border-radius: 12px;
+  background: var(--surface-2); border: 1px solid var(--border);
+}
+.field textarea { resize: vertical; }
+.field input:focus, .field select:focus, .field textarea:focus { border-color: var(--accent); outline: none; }
+
+.field.has-error input,
+.field.has-error textarea { border-color: var(--danger); }
+
+.field__error { color: var(--danger); font-size: 13px; }
+
+.field--radios { gap: 8px; }
+.radio {
+  display: flex; align-items: center; gap: 10px; min-height: 46px; padding: 0 14px;
+  border: 1px solid var(--border); border-radius: 12px; background: var(--surface-2);
+  color: var(--text) !important; font-size: 15px !important; cursor: pointer;
+}
+.radio:has(input:checked) { border-color: var(--accent); }
+.radio input { accent-color: var(--accent); width: 18px; height: 18px; }
+
+.form__hint { color: var(--muted); font-size: 13px; }
+
+/* done view */
+.done h3 { font-size: 20px; margin-bottom: 8px; }
+.done > p { color: var(--muted); margin-bottom: 16px; }
+.done__preview {
+  width: 100%; padding: 12px; border-radius: 12px; resize: none;
+  background: var(--surface-2); border: 1px solid var(--border);
+  font-size: 13px; line-height: 1.5;
+}
+.done__actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
+.done__actions .btn { flex: 1 1 160px; }
